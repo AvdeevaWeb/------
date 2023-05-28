@@ -607,9 +607,9 @@ footer {
 }
 
 
-@media (max-width: 360px) {
+@media (max-width: 400px) {
     .main-baikal__conteiner, .main-about__conteiner-text {
-        flex-wrap: wrap;  
+        flex-direction: column;  
     }
     .conteiner-text, .main-about__text {
         max-width: 100%;
