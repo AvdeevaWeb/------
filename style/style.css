@@ -1,0 +1,451 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans';
+}
+
+.header {
+    max-width: 1230px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.header__logo {
+    width: 160px;
+    height: 40px;
+}
+
+.header__nav ul {
+    display: flex;
+    gap: 20px;
+    align-items: center
+}
+
+.navigation-item {
+    text-decoration: none;
+    display: inline;
+    list-style: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #686868;
+}
+
+.navigation-item:last-child {
+    font-weight: 600;
+    padding: 7px 20px;
+    border: 2px solid #2F70D9;
+    border-radius: 5px;
+}
+
+.navigation-item a {
+    text-decoration: none;
+    color: #2F70D9;
+    margin-top: 10px;
+}
+
+.active:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: #2F70D9;
+    text-decoration-style: wavy;
+    color: #2F70D9;
+}
+
+/* --------------------------------------------------*/
+
+main {
+    max-width: 1230px;
+    margin: auto;
+}
+
+.main-baikal {
+    margin: 170px 50px 0 50px;
+    display: flex;
+    letter-spacing: 0.1em;
+}
+
+.main-baikal__conteiner,
+.main-about__conteiner-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.conteiner-text__title {
+    text-align: end;
+}
+
+.conteiner-text__title h1 {
+    font-weight: 700;
+    font-size: 131px;
+    line-height: 60px;
+    color: #2F70D9;
+    font-family: 'Lora';
+}
+
+.conteiner-text__title span {
+    font-weight: 900;
+    color: #686868;
+    font-size: 24px;
+}
+
+.conteiner-text,
+.main-about__text {
+    max-width: 40%;
+}
+
+.main-baikal__conteiner-image,
+.main-about__image {
+    max-width: 55%;
+}
+
+.conteiner-text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #686868;
+    margin-top: 60px;
+}
+
+.conteiner-text__booking {
+    padding: 19px 65px;
+    background: #D95845;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 40px;
+    color: #FFFFFF;
+    border: none;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+/* --------------------------------------------------*/
+.main__title {
+    font-family: 'Lora';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 64px;
+    color: #2F70D9;
+}
+
+.main-about,
+.main-we-offer,
+.main-our-rooms,
+.main-reviews {
+    margin: 170px 50px 0 50px;
+    letter-spacing: 0.1em;
+}
+
+.main-about__text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #686868;
+}
+
+.main-about__bold-text {
+    color: #000000 !important;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 45px;
+}
+
+/* --------------------------------------------------*/
+
+.main-we-offer__conteiner-grid {
+    margin: 80px 0 0 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 150px;
+    grid-row-gap: 50px;
+}
+
+.conteiner-grid__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.conteiner-grid__item img {
+    width: 75px;
+    height: 65px;
+}
+
+.conteiner-grid__item span {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #2F70D9;
+}
+
+.conteiner-grid__item p {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #686868;
+}
+
+/* --------------------------------------------------*/
+.main-our-rooms__conteiner {
+    margin-top: 80px;
+    display: flex;
+    gap: 30px;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.our-rooms__conteiner-image {
+    max-height: 410px;
+    max-width: 290px;
+
+}
+
+.our-rooms-conteiner__card {
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #2F70D9;
+    border-radius: 20px;
+    padding: 40px 30px;
+    gap: 30px;
+}
+
+.conteiner__card-image {
+    height: 110px;
+    margin: auto;
+}
+
+.card-image-single {
+    max-width: 170px;
+}
+
+.card-image-double {
+    max-width: 230px;
+}
+
+.conteiner__card-type-room {
+    width: 285px;
+    font-family: 'Lora';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #2F70D9;
+}
+
+.our-rooms-conteiner__card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    padding-left: 20px;
+}
+
+.our-rooms-conteiner__card ul li {
+    font-weight: 400;
+    font-size: 16px;
+    color: #686868;
+}
+
+.conteiner__card-price {
+    text-align: center;
+}
+
+.conteiner__card-price p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2F70D9;
+}
+
+.conteiner__card-price span {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #D95845
+}
+
+/* --------------------------------------------------*/
+.main-reviews__conteiner {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center
+}
+
+.main-reviews-conteiner__card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 210px;
+    max-height: 390px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 25px 25px 40px 25px;
+}
+
+.conteiner__card-profile-image {
+    width: 100px;
+    height: 100px;
+}
+
+.conteiner__card-username {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2F70D9;
+}
+
+.main-reviews-conteiner__card p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #686868;
+}
+
+/* --------------------------------------------------*/
+
+.main-contacts {
+    margin: 100px 50px;
+}
+
+.main-contacts-conteiner__card {
+    position: absolute;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 355px;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    padding: 31px 48px;
+}
+
+.main-contacts-conteiner__card h2 {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 64px;
+    color: #2F70D9;
+}
+
+.main-contacts-conteiner__card-span {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #686868;
+}
+
+.contacts-conteiner__card-adress {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #686868;
+}
+
+.contacts-conteiner__card-tel {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.contacts-conteiner__card-media {
+    display: inline;
+}
+
+.contacts-conteiner__card-media img {
+    margin-right: 10px;
+}
+
+.main-contacts__conteiner iframe {
+    position: relative;
+    width: 100%;
+    height: 503px;
+    border-radius: 20px;
+}
+
+/* --------------------------------------------------*/
+footer {
+    background-color: #282828;
+}
+
+.footer {
+    padding: 30px 50px;
+    display: flex;
+    margin: auto;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 110px;
+    color: #FFFFFF;
+}
+.footer__logo{
+    max-width: 180px;
+}
+
+.footer span {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #2F70D9;
+}
+.footer__navigation ul{
+    margin-top: 20px;
+}
+.footer-navigation__item{
+    font-weight: 400;
+font-size: 18px;
+line-height: 35px;
+list-style: none;
+}
+.footer__communication{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer__communication button{
+    font-weight: 700;
+font-size: 18px;
+line-height: 25px;
+padding: 8px 28px;
+border-radius: 5px;
+}
+
+.footer-communication__booking{
+    margin-top: 10px;
+    color: #FFFFFF;
+    background-color: #D95845;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid #FFFFFF;
+}
+.footer-communication__call{
+    color: #2F70D9;
+    background-color: #282828;
+    border: 2px solid #2F70D9;
+}
+
+.footer__contacts-span{
+    margin-top: 20px;
+}
+.footer__contacts-tel{
+    margin-top: 10px;
+}
+.footer__contacts-media img{
+   margin-top: 10px;
+    width: 30px;
+    height: 30px;
+}
