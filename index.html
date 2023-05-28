@@ -15,16 +15,36 @@
 
 <body>
     <header>
-        <section class="header">
+        <section class="header" id="header">
+            <button class="menu-burger__header-btn" id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
             <img class="header__logo" src="img/img-header-logo.png" alt="" class="header__logo">
             <nav class="header__nav">
                 <ul>
+                    <div class="hidden">
+                        <img src="img/img-header-logo.png" alt="">
+                    </div>
                     <li class="navigation-item active">Главная</li>
                     <li class="navigation-item active">О гостинице</li>
                     <li class="navigation-item active">Преимущества</li>
                     <li class="navigation-item active">Номера</li>
                     <li class="navigation-item active">Отзывы</li>
-                    <li class="navigation-item "><a href="#">Обратный звонок</a></li>
+                    <li class="navigation-item border "><a href="#">Обратный звонок</a></li>
+
+                    <div class="hidden">
+                        <p class = "hidden__adress">Адрес:</span>
+                            <p class="hidden__adress-adress">Кайдаловская ул., 37, Чита</p>
+                            <p class="hidden__tel">+7 (929) 483-02-55</span>
+                            <p class="hidden__tel">+7 (905) 763-02-46</span>
+                            <div class="hidde__contacts-media">
+                                <img src="img/img-contacts-conteiner__card-media-viber.png" alt="">
+                                <img src="img/img-contacts-conteiner__card-media-whatsapp.png" alt="">
+                            </div>
+                    </div>
                 </ul>
             </nav>
         </section>
@@ -112,7 +132,7 @@
             </div>
         </section>
         <section class="main-our-rooms">
-            <h2 class="main__title">Мы предлагаем</h2>
+            <h2 class="main__title">Наши номера</h2>
             <div class="main-our-rooms__conteiner">
                 <img class="our-rooms__conteiner-image" src="img/img-main-our-rooms-boy.png" alt="">
                 <div class="our-rooms-conteiner__card">
@@ -238,7 +258,7 @@
             </div>
         </section>
     </footer>
-
+    <script src="script/burger-menu-script.js"></script>
 </body>
 
 </html>

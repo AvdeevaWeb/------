@@ -1,3 +1,10 @@
+:root {
+    --main-color-text: #686868;
+    --main-color-title: #2F70D9;
+    --main-font-size-text: calc(12px + 4 * (100vw/1230));
+    --main-font-size-title: calc(30px + 20 * (100vw/1230));
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -12,13 +19,14 @@ body {
     display: flex;
     justify-content: space-between;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 3%;
     align-items: center;
 }
 
 .header__logo {
     width: 160px;
     height: 40px;
+    margin-left: 5%;
 }
 
 .header__nav ul {
@@ -29,7 +37,7 @@ body {
 
 .navigation-item {
     text-decoration: none;
-    display: inline;
+    display: flex;
     list-style: none;
     font-weight: 400;
     font-size: 18px;
@@ -37,7 +45,7 @@ body {
     color: #686868;
 }
 
-.navigation-item:last-child {
+.border {
     font-weight: 600;
     padding: 7px 20px;
     border: 2px solid #2F70D9;
@@ -46,16 +54,16 @@ body {
 
 .navigation-item a {
     text-decoration: none;
-    color: #2F70D9;
-    margin-top: 10px;
+    color: var(--main-color-title);
+    margin-top: 1%;
 }
 
 .active:hover {
     text-decoration: underline;
     text-underline-offset: 10px;
-    text-decoration-color: #2F70D9;
+    text-decoration-color: var(--main-color-title);
     text-decoration-style: wavy;
-    color: #2F70D9;
+    color: var(--main-color-title);
 }
 
 /* --------------------------------------------------*/
@@ -66,7 +74,7 @@ main {
 }
 
 .main-baikal {
-    margin: 170px 50px 0 50px;
+    margin: 13% 5% 0 5%;
     display: flex;
     letter-spacing: 0.1em;
 }
@@ -85,15 +93,15 @@ main {
 
 .conteiner-text__title h1 {
     font-weight: 700;
-    font-size: 131px;
+    font-size: calc(60px + 40 * (100vw / 1230));
     line-height: 60px;
-    color: #2F70D9;
+    color: var(--main-color-title);
     font-family: 'Lora';
 }
 
 .conteiner-text__title span {
     font-weight: 900;
-    color: #686868;
+    color: var(--main-color-text);
     font-size: 24px;
 }
 
@@ -109,9 +117,9 @@ main {
 
 .conteiner-text p {
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--main-font-size-text);
     line-height: 23px;
-    color: #686868;
+    color: var(--main-color-text);
     margin-top: 60px;
 }
 
@@ -120,7 +128,7 @@ main {
     background: #D95845;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    margin-top: 40px;
+    margin-top: 8%;
     color: #FFFFFF;
     border: none;
     font-size: 22px;
@@ -131,38 +139,38 @@ main {
 .main__title {
     font-family: 'Lora';
     font-weight: 700;
-    font-size: 50px;
+    font-size: var(--main-font-size-title);
     line-height: 64px;
-    color: #2F70D9;
+    color: var(--main-color-title);
 }
 
 .main-about,
 .main-we-offer,
 .main-our-rooms,
 .main-reviews {
-    margin: 170px 50px 0 50px;
+    margin: 13% 5% 0 5%;
     letter-spacing: 0.1em;
 }
 
 .main-about__text p {
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--main-font-size-text);
     line-height: 23px;
-    color: #686868;
+    color: var(--main-color-text);
 }
 
 .main-about__bold-text {
     color: #000000 !important;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-top: 45px;
+    margin-top: 4%;
 }
 
 /* --------------------------------------------------*/
 
 .main-we-offer__conteiner-grid {
-    margin: 80px 0 0 100px;
+    margin: 6% 0 0 8%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-column-gap: 150px;
     grid-row-gap: 50px;
 }
@@ -180,25 +188,26 @@ main {
 }
 
 .conteiner-grid__item span {
-    margin-top: 20px;
+    margin-top: 2%;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
-    color: #2F70D9;
+    color: var(--main-color-title);
 }
 
 .conteiner-grid__item p {
-    margin-top: 10px;
+    margin-top: 1%;
     font-weight: 400;
-    font-size: 14px;
+    font-size: var(--main-font-size-text);
     line-height: 20px;
-    color: #686868;
+    color: var(--main-color-text);
 }
 
 /* --------------------------------------------------*/
 .main-our-rooms__conteiner {
-    margin-top: 80px;
+    margin-top: 7%;
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     align-items: flex-end;
     justify-content: center;
@@ -207,14 +216,13 @@ main {
 .our-rooms__conteiner-image {
     max-height: 410px;
     max-width: 290px;
-
 }
 
 .our-rooms-conteiner__card {
     max-width: 280px;
     display: flex;
     flex-direction: column;
-    border: 3px solid #2F70D9;
+    border: 3px solid var(--main-color-title);
     border-radius: 20px;
     padding: 40px 30px;
     gap: 30px;
@@ -239,7 +247,7 @@ main {
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
-    color: #2F70D9;
+    color: var(--main-color-title);
 }
 
 .our-rooms-conteiner__card ul {
@@ -251,8 +259,8 @@ main {
 
 .our-rooms-conteiner__card ul li {
     font-weight: 400;
-    font-size: 16px;
-    color: #686868;
+    font-size: var(--main-font-size-text);
+    color: var(--main-color-text);
 }
 
 .conteiner__card-price {
@@ -261,13 +269,13 @@ main {
 
 .conteiner__card-price p {
     font-weight: 700;
-    font-size: 16px;
+    font-size: var(--main-font-size-text);
     line-height: 20px;
-    color: #2F70D9;
+    color: var(--main-color-title);
 }
 
 .conteiner__card-price span {
-    margin-top: 10px;
+    margin-top: 1%;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
@@ -276,11 +284,11 @@ main {
 
 /* --------------------------------------------------*/
 .main-reviews__conteiner {
-    margin-top: 80px;
+    margin-top: 7%;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center
+    gap: 20px;
+
 }
 
 .main-reviews-conteiner__card {
@@ -302,22 +310,22 @@ main {
 
 .conteiner__card-username {
     font-weight: 700;
-    font-size: 16px;
+    font-size: var(--main-font-size-text);
     line-height: 20px;
-    color: #2F70D9;
+    color: var(--main-color-title);
 }
 
 .main-reviews-conteiner__card p {
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--main-font-size-text);
     line-height: 23px;
-    color: #686868;
+    color: var(--main-color-text);
 }
 
 /* --------------------------------------------------*/
 
 .main-contacts {
-    margin: 100px 50px;
+    margin: 8% 4%;
 }
 
 .main-contacts-conteiner__card {
@@ -325,7 +333,7 @@ main {
     z-index: 1;
     background: #FFFFFF;
     max-width: 355px;
-    margin: 25px;
+    margin: 2%;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -338,23 +346,23 @@ main {
     font-family: 'Lora';
     font-style: normal;
     font-weight: 700;
-    font-size: 50px;
+    font-size: var(--main-font-size-title);
     line-height: 64px;
-    color: #2F70D9;
+    color: var(--main-color-title);
 }
 
 .main-contacts-conteiner__card-span {
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
-    color: #686868;
+    color: var(--main-color-text);
 }
 
 .contacts-conteiner__card-adress {
     font-weight: 400;
-    font-size: 16px;
+    font-size: var(--main-font-size-text);
     line-height: 23px;
-    color: #686868;
+    color: var(--main-color-text);
 }
 
 .contacts-conteiner__card-tel {
@@ -369,7 +377,7 @@ main {
 }
 
 .contacts-conteiner__card-media img {
-    margin-right: 10px;
+    margin-right: 1%;
 }
 
 .main-contacts__conteiner iframe {
@@ -387,13 +395,15 @@ footer {
 .footer {
     padding: 30px 50px;
     display: flex;
+    flex-wrap: wrap;
     margin: auto;
     align-items: flex-start;
     justify-content: center;
     gap: 110px;
     color: #FFFFFF;
 }
-.footer__logo{
+
+.footer__logo {
     max-width: 180px;
 }
 
@@ -401,51 +411,223 @@ footer {
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
-    color: #2F70D9;
+    color: var(--main-color-title);
 }
-.footer__navigation ul{
-    margin-top: 20px;
+
+.footer__navigation ul {
+    margin-top: 2%;
 }
-.footer-navigation__item{
+
+.footer-navigation__item {
     font-weight: 400;
-font-size: 18px;
-line-height: 35px;
-list-style: none;
+    font-size: 18px;
+    line-height: 35px;
+    list-style: none;
 }
-.footer__communication{
+
+.footer__communication {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.footer__communication button{
+
+.footer__communication button {
     font-weight: 700;
-font-size: 18px;
-line-height: 25px;
-padding: 8px 28px;
-border-radius: 5px;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 8px 28px;
+    border-radius: 5px;
 }
 
-.footer-communication__booking{
-    margin-top: 10px;
+.footer-communication__booking {
+    margin-top: 1%;
     color: #FFFFFF;
     background-color: #D95845;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
     border: 2px solid #FFFFFF;
 }
-.footer-communication__call{
-    color: #2F70D9;
+
+.footer-communication__call {
+    color: var(--main-color-title);
     background-color: #282828;
-    border: 2px solid #2F70D9;
+    border: 2px solid var(--main-color-title);
 }
 
-.footer__contacts-span{
-    margin-top: 20px;
+.footer__contacts-span {
+    margin-top: 2%;
 }
-.footer__contacts-tel{
-    margin-top: 10px;
+
+.footer__contacts-tel {
+    margin-top: 1%;
 }
-.footer__contacts-media img{
-   margin-top: 10px;
+
+.footer__contacts-media img {
+    margin-top: 1%;
     width: 30px;
     height: 30px;
+}
+
+/* --------------------------------------------------*/
+.menu-burger__header-btn {
+    display: none;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border: none;
+    background-color: transparent;
+    z-index: 2;
+    left: 5%
+}
+
+.menu-burger__header-btn span {
+    position: absolute;
+    background-color: var(--main-color-title);
+    width: 40px;
+    height: 3px;
+    left: 5px;
+    transition: transform .5s, opacity .3s;
+}
+
+.menu-burger__header-btn span:nth-child(1) {
+    transform: translateY(-10px)
+}
+
+.menu-burger__header-btn span:nth-child(3) {
+    transform: translateY(10px)
+}
+
+.header.open .menu-burger__header-btn span:nth-child(1) {
+    transform: translateY(0) rotate(45deg);
+}
+
+.header.open .menu-burger__header-btn span:nth-child(2) {
+    opacity: 0;
+}
+
+.header.open .menu-burger__header-btn span:nth-child(3) {
+    transform: translateY(0) rotate(-45deg);
+}
+
+/* --------------------------------------------------*/
+.hidden {
+    display: none;
+}
+
+.hidden__adress {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--main-color-text);
+}
+
+.hidden__adress-adress {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--main-color-text);
+}
+
+.hidden__tel {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+}
+
+.hidde__contacts-media img {
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+/* --------------------------------------------------*/
+
+@media(max-width: 1000px) {
+    .menu-burger__header-btn {
+        display: block;
+    }
+
+    .header__nav {
+        position: absolute;
+        left: -100%;
+        top: 0;
+        width: 100%;
+        padding: 50px 0 20px 0;
+        background-color: #FFFFFF;
+        transition: transform .5s;
+    }
+
+    .header.open .header__nav {
+        transform: translateX(100%);
+    }
+
+    .header__nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation-item {
+        color: var(--main-color-text);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .navigation-item:hover {
+        color: var(--main-color-title);
+        font-weight: 800;
+    }
+    .header.open .hidden {
+        display: block;
+    }
+    .our-rooms__conteiner-image{
+        display: none;
+    }
+    .main-reviews__conteiner{
+        justify-content: center
+    }
+
+    .main-contacts__conteiner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-contacts-conteiner__card{
+        position: relative;
+    }
+    .main-contacts__map{
+        width: 100%;
+        margin-top: 3%;
+    }
+    .header__logo{
+        margin-right: 5%;
+    }
+}
+
+
+@media (max-width: 360px) {
+    .main-baikal__conteiner, .main-about__conteiner-text {
+        flex-wrap: wrap;  
+    }
+    .conteiner-text, .main-about__text {
+        max-width: 100%;
+    }
+    .main-baikal__conteiner-image, .main-about__image {
+        max-width: 100%;
+    }
+    .main__title{
+        font-size: 30px;
+    }
+    .main-our-rooms__conteiner{
+        margin-left: 5px;
+    }
+    .our-rooms-conteiner__card{
+        max-width: 220px;
+    }
+    .footer{
+        gap: 30px;
+        justify-content: flex-start
+    }
 }
