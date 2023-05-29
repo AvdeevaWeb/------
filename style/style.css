@@ -48,8 +48,19 @@ body {
 .border {
     font-weight: 600;
     padding: 7px 20px;
-    border: 2px solid #2F70D9;
+    border: 2px solid var(--main-color-title);
     border-radius: 5px;
+}
+
+.border:hover{
+    
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF ;
+    background-color: var(--main-color-title);
+}
+
+.border a:hover{
+    color: #FFFFFF ;
 }
 
 .navigation-item a {
